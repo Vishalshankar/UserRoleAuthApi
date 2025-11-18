@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRoleAuth.Api", "UserRoleAuth.Api\UserRoleAuth.Api.csproj", "{7678AD5C-E330-4BD0-8E80-84A716BDAB9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRoleAuth.Core", "UserRoleAuth.Core\UserRoleAuth.Core.csproj", "{44FA37DA-0590-4779-9282-93F76BBF60B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRoleAuth.Infrastructure", "UserRoleAuth.Infrastructure\UserRoleAuth.Infrastructure.csproj", "{D30FD334-F9B4-4C4A-B928-63199FF4D288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRoleAuth.Tests", "UserRoleAuth.Tests\UserRoleAuth.Tests.csproj", "{3F7B9711-6C72-4F2B-B5C3-F1344C4E48EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7678AD5C-E330-4BD0-8E80-84A716BDAB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7678AD5C-E330-4BD0-8E80-84A716BDAB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7678AD5C-E330-4BD0-8E80-84A716BDAB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7678AD5C-E330-4BD0-8E80-84A716BDAB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FA37DA-0590-4779-9282-93F76BBF60B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FA37DA-0590-4779-9282-93F76BBF60B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FA37DA-0590-4779-9282-93F76BBF60B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FA37DA-0590-4779-9282-93F76BBF60B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30FD334-F9B4-4C4A-B928-63199FF4D288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30FD334-F9B4-4C4A-B928-63199FF4D288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30FD334-F9B4-4C4A-B928-63199FF4D288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30FD334-F9B4-4C4A-B928-63199FF4D288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7B9711-6C72-4F2B-B5C3-F1344C4E48EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7B9711-6C72-4F2B-B5C3-F1344C4E48EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7B9711-6C72-4F2B-B5C3-F1344C4E48EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7B9711-6C72-4F2B-B5C3-F1344C4E48EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
