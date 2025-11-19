@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserRoleAuth.Core.Entities
 {
-    internal class RefreshToken
+    public class RefreshToken
     {
         public int Id { get; set; }
         public string Token { get; set; } = null!;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UserRoleAuth.Core.Entities
 {
-    internal class ApplicationRole: IdentityRole
+    public class ApplicationRole: IdentityRole
     {
         public string? Description { get; set; }
     }
