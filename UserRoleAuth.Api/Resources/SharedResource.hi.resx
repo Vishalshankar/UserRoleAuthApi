@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="User_Not_Found" xml:space="preserve">
+    <value>उपयोगकर्ता नहीं मिला।</value>
+  </data>
+  <data name="User_Deleted" xml:space="preserve">
+    <value>उपयोगकर्ता सफलतापूर्वक हटाया गया।</value>
+  </data>
+  <data name="User_Updated" xml:space="preserve">
+    <value>उपयोगकर्ता सफलतापूर्वक अपडेट किया गया।</value>
+  </data>
+  <data name="Role_Added" xml:space="preserve">
+    <value>भूमिका सफलतापूर्वक जोड़ी गई।</value>
+  </data>
+  <data name="Invalid_Role" xml:space="preserve">
+    <value>गलत भूमिका नाम।</value>
+  </data>
+</root>

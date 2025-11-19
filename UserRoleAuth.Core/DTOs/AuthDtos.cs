@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserRoleAuth.Core.DTOs
 {
-    internal class AuthDtos
+    public class AuthDtos
     {
         public class CreateUserDto
         {
