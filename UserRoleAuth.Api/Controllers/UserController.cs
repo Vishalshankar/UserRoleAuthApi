@@ -32,7 +32,7 @@ namespace UserRoleAuth.Api.Controllers
 
         // GET: api/user
         [HttpGet]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult GetAll()
         {
             var users = _userManager.Users.Select(u => new
