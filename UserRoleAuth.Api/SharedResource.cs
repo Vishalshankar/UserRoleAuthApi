@@ -1,4 +1,4 @@
-﻿namespace UserRoleAuth.Api.Resources
+﻿namespace UserRoleAuth.Api
 {
     public class SharedResource
     {

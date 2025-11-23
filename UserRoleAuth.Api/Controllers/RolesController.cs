@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
+using UserRoleAuth.Api;
 using UserRoleAuth.Core.Entities;
 
 namespace UserRoleAuth.Api.Controllers
@@ -11,28 +13,66 @@ namespace UserRoleAuth.Api.Controllers
     public class RolesController : ControllerBase
     {
         private readonly RoleManager<ApplicationRole> _roleManager;
-        public RolesController(RoleManager<ApplicationRole> roleManager) => _roleManager = roleManager;
+        private readonly IStringLocalizer<SharedResource> _localizer;
 
+        public RolesController(
+            RoleManager<ApplicationRole> roleManager,
+            IStringLocalizer<SharedResource> localizer)
+        {
+            _roleManager = roleManager;
+            _localizer = localizer;
+        }
+
+        // ======================
+        //   GET ALL ROLES
+        // ======================
         [HttpGet]
-        public IActionResult GetAll() => Ok(_roleManager.Roles.Select(r => new { r.Id, r.Name, r.Description }));
+        public IActionResult GetAll()
+        {
+            var roles = _roleManager.Roles
+                .Select(r => new { r.Id, r.Name, r.Description })
+                .ToList();
 
+            return Ok(roles);
+        }
+
+        // ======================
+        //     CREATE ROLE
+        // ======================
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] ApplicationRole role)
         {
-            if (await _roleManager.RoleExistsAsync(role.Name)) return BadRequest("Role exists");
-            var res = await _roleManager.CreateAsync(role);
-            if (!res.Succeeded) return BadRequest(res.Errors);
-            return Ok();
+            if (role == null || string.IsNullOrWhiteSpace(role.Name))
+                return BadRequest(_localizer["RoleNameRequired"]);
+
+            if (await _roleManager.RoleExistsAsync(role.Name))
+                return BadRequest(_localizer["RoleAlreadyExists"]);
+
+            var result = await _roleManager.CreateAsync(role);
+
+            if (!result.Succeeded)
+                return BadRequest(result.Errors);
+
+            return Ok(new { message = _localizer["RoleCreated"] });
         }
 
+        // ======================
+        //     DELETE ROLE
+        // ======================
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
-            var r = await _roleManager.FindByIdAsync(id);
-            if (r == null) return NotFound();
-            var res = await _roleManager.DeleteAsync(r);
-            if (!res.Succeeded) return BadRequest(res.Errors);
-            return NoContent();
+            var role = await _roleManager.FindByIdAsync(id);
+
+            if (role == null)
+                return NotFound(_localizer["RoleNotFound"]);
+
+            var result = await _roleManager.DeleteAsync(role);
+
+            if (!result.Succeeded)
+                return BadRequest(result.Errors);
+
+            return Ok(new { message = _localizer["RoleDeleted"] });
         }
     }
 }

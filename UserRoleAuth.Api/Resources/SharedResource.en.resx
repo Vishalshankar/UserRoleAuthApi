@@ -13,19 +13,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 
-  <data name="User_Not_Found" xml:space="preserve">
-    <value>User not found.</value>
-  </data>
-  <data name="User_Deleted" xml:space="preserve">
-    <value>User deleted successfully.</value>
-  </data>
-  <data name="User_Updated" xml:space="preserve">
-    <value>User updated successfully.</value>
-  </data>
-  <data name="Role_Added" xml:space="preserve">
-    <value>Role added successfully.</value>
-  </data>
-  <data name="Invalid_Role" xml:space="preserve">
-    <value>Invalid role name.</value>
-  </data>
+  <!-- SharedResource.resx -->
+<data name="UserCreated" xml:space="preserve">
+  <value>User created successfully.</value>
+</data>
+
+<data name="InvalidCredentials" xml:space="preserve">
+  <value>Invalid username or password.</value>
+</data>
+
+<data name="InvalidRefreshToken" xml:space="preserve">
+  <value>Invalid or expired refresh token.</value>
+</data>
+
+<data name="RoleNameRequired" xml:space="preserve">
+  <value>Role name is required.</value>
+</data>
+
+<data name="RoleAlreadyExists" xml:space="preserve">
+  <value>Role already exists.</value>
+</data>
+
+<data name="RoleCreated" xml:space="preserve">
+  <value>Role created successfully.</value>
+</data>
+
+<data name="RoleDeleted" xml:space="preserve">
+  <value>Role deleted successfully.</value>
+</data>
+
+<data name="RoleNotFound" xml:space="preserve">
+  <value>Role not found.</value>
+</data>
+
+<data name="User_Not_Found" xml:space="preserve">
+  <value>User not found.</value>
+</data>
+
+<data name="User_Updated" xml:space="preserve">
+  <value>User updated successfully.</value>
+</data>
+
+<data name="User_Deleted" xml:space="preserve">
+  <value>User deleted successfully.</value>
+</data>
+
+<data name="Invalid_Role" xml:space="preserve">
+  <value>Invalid role name.</value>
+</data>
+
+<data name="Role_Added" xml:space="preserve">
+  <value>Role added to the user successfully.</value>
+</data>
+
+
 </root>

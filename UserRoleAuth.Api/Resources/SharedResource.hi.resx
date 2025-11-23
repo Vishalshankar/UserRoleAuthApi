@@ -13,19 +13,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 
-  <data name="User_Not_Found" xml:space="preserve">
-    <value>उपयोगकर्ता नहीं मिला।</value>
-  </data>
-  <data name="User_Deleted" xml:space="preserve">
-    <value>उपयोगकर्ता सफलतापूर्वक हटाया गया।</value>
-  </data>
-  <data name="User_Updated" xml:space="preserve">
-    <value>उपयोगकर्ता सफलतापूर्वक अपडेट किया गया।</value>
-  </data>
-  <data name="Role_Added" xml:space="preserve">
-    <value>भूमिका सफलतापूर्वक जोड़ी गई।</value>
-  </data>
-  <data name="Invalid_Role" xml:space="preserve">
-    <value>गलत भूमिका नाम।</value>
-  </data>
+  <!-- SharedResource.hi.resx -->
+<data name="UserCreated" xml:space="preserve">
+  <value>उपयोगकर्ता सफलतापूर्वक बनाया गया।</value>
+</data>
+
+<data name="InvalidCredentials" xml:space="preserve">
+  <value>अमान्य उपयोगकर्ता नाम या पासवर्ड।</value>
+</data>
+
+<data name="InvalidRefreshToken" xml:space="preserve">
+  <value>अमान्य या समाप्त रिफ्रेश टोकन।</value>
+</data>
+
+<data name="RoleNameRequired" xml:space="preserve">
+  <value>भूमिका नाम आवश्यक है।</value>
+</data>
+<data name="RoleDeleted" xml:space="preserve">
+  <value>भूमिका सफलतापूर्वक हटा दी गई.</value>
+</data>
+<data name="RoleAlreadyExists" xml:space="preserve">
+  <value>भूमिका पहले से मौजूद है।</value>
+</data>
+
+<data name="RoleCreated" xml:space="preserve">
+  <value>भूमिका सफलतापूर्वक बनाई गई।</value>
+</data>
+
+<data name="RoleNotFound" xml:space="preserve">
+  <value>भूमिका नहीं मिली।</value>
+</data>
+
+<data name="User_Not_Found" xml:space="preserve">
+  <value>उपयोगकर्ता नहीं मिला।</value>
+</data>
+
+<data name="User_Updated" xml:space="preserve">
+  <value>उपयोगकर्ता सफलतापूर्वक अपडेट किया गया।</value>
+</data>
+
+<data name="User_Deleted" xml:space="preserve">
+  <value>उपयोगकर्ता सफलतापूर्वक हटाया गया।</value>
+</data>
+
+<data name="Invalid_Role" xml:space="preserve">
+  <value>अमान्य भूमिका नाम।</value>
+</data>
+
+<data name="Role_Added" xml:space="preserve">
+  <value>भूमिका उपयोगकर्ता में सफलतापूर्वक जोड़ी गई।</value>
+</data>
+
 </root>
